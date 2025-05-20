@@ -1,0 +1,521 @@
+/* Paleta de colores
+    #344CB7
+    #000957 Azul oscuro
+    #577BC1
+    #FFEB00 Amarillo       */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000957;
+    font-family: Roboto, sans-serif;
+}
+
+/* header ----------------------------------------------->*/
+
+header {
+    background-color: #344CB7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 10px 20px 10px;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    width: 90%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+li {
+    padding-right: 80px;
+}
+/* main ------------------------------------------------->*/
+h1 {
+    text-align: center;
+    color: #FFEB00;
+    padding: 30px;
+}
+
+p {
+    color: #FFEB00;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 40px 15px;
+    margin: 20px;
+}
+
+.banner-inicio {
+    width: 100%;
+    height: 700px;
+}
+/* section imagenes ------------------------------------->*/
+
+.section_partidos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0 50px 30px;
+}
+
+.div-partidos img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+button a {
+    color: #000957;
+    background-color: #FFEB00;
+    margin-top: 15px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.boton-titulos,.boton-partidos,.boton-historia,.boton-hinchada {
+    margin-top: 5px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+/* footer --------------------------------------------->*/
+
+footer {
+    background-color: #344CB7;
+    color: #FFEB00;
+    height: 300px;
+}
+
+.div-footer {
+    margin-left: 40px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.titulo-footer {
+    padding: 20px;
+    text-align: right;
+}
+
+.imagenes-footer{
+    margin: 10px 20px;
+    justify-self: right;
+}
+
+.imagenes-footer img {
+    height: 40px;
+    width: 60px;
+    padding-left: 15px;
+}
+
+.parrafo-footer p {
+    text-align: center;
+    margin-left: 40px;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.wp{
+    width: 65px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+/* pagina partidos -------------------------------------->*/
+
+label {
+    color: #FFEB00;
+}
+
+.parrafo_partidos { 
+    text-align: center;
+    font-size: 1.3em;
+    padding: 45px;
+}
+
+.subtitulo_partidos {
+    color: #FFEB00;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-comen, .form-email, .form-nombre {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+label {
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+/* pagina titulos --------------------------------------->*/
+
+/* grid pagina titulos */
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "texto1 texto1 img1"
+    "img2 img2 img1"
+    "texto2 img3 texto3";
+
+    grid-template-columns: 25% 40% 25%;
+    grid-template-rows: 200px repeat(3,400px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.titulo-grid {
+    grid-area: titulo;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.grid-texto1 {
+    grid-area: texto1;
+    align-content: center;
+}
+
+.grid-texto2 { grid-area: texto2; }
+
+.grid-texto3 { grid-area: texto3; }
+
+.grid-img1 {
+    grid-area: img1;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-img2 {
+    grid-area: img2;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-img3 {
+    grid-area: img3;
+    width: 100%;
+    height: 100%;
+}
+
+/* pagina historia -------------------------------------->*/
+
+
+.titulo_historia {
+    text-align: center;
+    font-size: 1.9em;
+}
+
+.parrafo_historia {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 30px 30px 50px 30px;
+}
+
+.cards-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.card-body {
+    background-color: #344CB7;
+    height: 150px;
+    width: 350px;
+    justify-items:  center;
+}
+
+.card-text {
+    color: #FFEB00;
+}
+
+.card-img-top {
+    height: 350px;
+    width: 350px;
+}
+
+/* pagina hinchada ------------------------------------->*/
+
+.titulo_hinchada {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.parrafo_hinchada {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+iframe {
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* mediaQ --------------------------------------------->*/
+
+        /* nav y header  */
+@media (max-width: 480px){
+
+    body {
+        padding: 5px;
+    }
+
+    header {
+        padding: 0;
+        width: 100%;
+    }
+
+    header img {
+        margin: 10px;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 2px;
+    }
+
+         /* pagina principal */
+
+.section_partidos {
+    flex-direction: column;
+    align-items: center;
+}
+
+        /* pagina partidos */
+
+.form-nombre, .form-email, .form-comen{
+    margin-right: 20px;
+    margin-left: 5px;
+    padding-bottom: 20px;
+}
+
+.subtitulo_partidos {
+    text-align: center;
+    margin: 20px;
+    padding-top: 15px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+label {
+    font-size: 1em;
+}
+        /* pagina titulos */
+
+    .contenedor-grid {
+        grid-template-areas:
+        "titulo"
+        "texto1"
+        "img1"
+        "texto2"
+        "img2"
+        "texto3";
+        grid-template-columns: 90%;
+        grid-template-rows: 70px repeat(5, 300px);
+        gap: 10px;
+    }
+
+    .grid-img3 {
+        display: none;
+    }
+
+        /* pagina hinchada */
+
+iframe {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+        /* pagina historia */
+
+.cards-flex {
+    flex-direction: column;
+    height: 1500px;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-body {
+    background-color: #344CB7;
+    height: 150px;
+    width: 300px;
+    padding: 0;
+}
+
+.card-text {
+    color: #FFEB00;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 300px;
+}
+
+        /* footer */
+
+    footer {
+        width: 100%;
+    }
+
+    .div-footer {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 15px;
+    }
+
+    .titulo-footer {
+        text-align: center;
+        margin-right: 40px;
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .imagenes-footer {
+        justify-self: center;
+        padding-top: 15px;
+        margin-right: 30px;
+    }
+
+    .parrafo-footer p {
+        text-align: center;
+    }
+}
+
+        /* mediaQ para tablets */
+
+@media (min-width: 481px) and (max-width: 1024px){
+
+    body {
+        padding: 3px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    /* pagina principal */
+
+.section_partidos {
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+        /* pagina partidos */
+
+.form-nombre, .form-email, .form-comen {
+    margin-right: 20px;
+    margin-left: 25px;
+    padding-bottom: 20px;
+}
+
+.subtitulo_partidos {
+    font-size: 2em;
+    text-align: center;
+    margin: 30px;
+    padding-top: 15px;
+}
+
+label {
+    font-size: 1.6em;
+}
+
+input {
+    border-radius: 5px;
+}
+
+        /* pagina titulos */
+
+.contenedor-grid {
+    grid-template-areas: 
+    "titulo" 
+    "texto1"
+    "img1"
+    "texto2"
+    "img2" 
+    "texto3";
+
+    grid-template-columns: 60%;
+    grid-template-rows: 70px repeat(5, 300px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid-img3 {
+    display: none;
+}
+
+        /* pagina historia */
+        
+.cards-flex {
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+    gap: 10px;
+}
+
+.card-body {
+    background-color: #344CB7;
+    height: 150px;
+    width: 350px;
+    justify-items:  center;
+}
+
+.card-text {
+    color: #FFEB00;
+}
+
+.card-img-top {
+    height: 350px;
+    width: 350px;
+
+}
+        /* pagina hinchada */
+
+iframe {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+footer {
+    margin-top: 50px;
+}
+}
