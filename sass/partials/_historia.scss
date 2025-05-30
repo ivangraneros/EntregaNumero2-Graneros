@@ -1,0 +1,35 @@
+/* pagina historia -------------------------------------->*/
+
+.titulo_historia {
+    text-align: center;
+    font-size: 1.9em;
+}
+.parrafo_historia {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 30px 30px 50px 30px;
+}
+.cards-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px;
+    .card {
+        position: static;
+        .card-img-top {
+            height: 350px;
+            width: 350px;
+        }
+}
+.card-body {
+    background-color: #344CB7;
+    height: 150px;
+    width: 350px;
+    justify-items:  center;
+    border-radius: 5px;
+    position: initial;
+    .card-text {
+    color: #FFEB00;
+}
+}
+}

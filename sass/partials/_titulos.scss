@@ -1,0 +1,48 @@
+/* pagina titulos --------------------------------------->*/
+
+/* grid pagina titulos */
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "texto1 texto1 img1"
+    "img2 img2 img1"
+    "texto2 img3 texto3";
+
+    grid-template-columns: 25% 40% 25%;
+    grid-template-rows: 200px repeat(3,400px);
+    gap: 15px;
+    justify-content: center;
+    .titulo-grid {
+    grid-area: titulo;
+    justify-content: center;
+    align-content: center;
+}
+.grid-texto1 {
+    grid-area: texto1;
+    align-content: center;
+}
+.grid-texto2 { grid-area: texto2; }
+
+.grid-texto3 { grid-area: texto3; }
+
+.grid-img1 {
+    grid-area: img1;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-img2 {
+    grid-area: img2;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-img3 {
+    grid-area: img3;
+    width: 100%;
+    height: 100%;
+}
+
+}

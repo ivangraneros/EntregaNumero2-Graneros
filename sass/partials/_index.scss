@@ -1,0 +1,51 @@
+/* main ------------------------------------------------->*/
+
+h1 {
+    text-align: center;
+    color: #FFEB00;
+    padding: 30px;
+}
+.banner-inicio {
+    width: 100%;
+    height: 700px;
+}
+p {
+    color: #FFEB00;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 40px 15px;
+    margin: 20px;
+}
+
+/* section imagenes ------------------------------------->*/
+
+.section_partidos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0 50px 30px;
+    .div-partidos img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+    }
+
+@mixin button-styles($margin-top,$width) {
+    margin-top: $margin-top;
+    width: $width;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-titulos,.boton-partidos,.boton-historia,.boton-hinchada {
+    @include button-styles(5px, 300px);
+    button a {
+        color: #000957;
+        background-color: #FFEB00;
+        margin-top: 15px;
+        text-decoration: none;
+        padding: 5px;
+    }
+}
+}
