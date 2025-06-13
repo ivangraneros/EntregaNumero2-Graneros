@@ -4,7 +4,7 @@
 @media (max-width: 480px){
 
     body {
-        padding: 5px;
+        padding: 0;
         header {
             padding: 0;
             width: 100%;
@@ -57,15 +57,15 @@
         grid-template-areas:
         "titulo"
         "texto1"
-        "img2"
-        "texto2"
         "img3"
+        "texto2"
+        "img2"
         "texto3";
-        grid-template-columns: 90%;
+        grid-template-columns: 95%;
         grid-template-rows: 70px 500px repeat(2, 350px) 300px 450px;
         gap: 20px;
         .grid-img1 {
-            display: none;
+             display: none;
         }
         
     }

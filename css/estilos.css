@@ -254,7 +254,7 @@ iframe {
 /* nav y header  */
 @media (max-width: 480px) {
   body {
-    padding: 5px;
+    padding: 0;
     /* pagina principal */
   }
   body header {
@@ -300,12 +300,12 @@ iframe {
   }
   /* pagina titulos */
   .contenedor-grid {
-    grid-template-areas: "titulo" "texto1" "img1" "texto2" "img2" "texto3";
-    grid-template-columns: 90%;
-    grid-template-rows: 70px repeat(5, 350px);
+    grid-template-areas: "titulo" "texto1" "img3" "texto2" "img2" "texto3";
+    grid-template-columns: 95%;
+    grid-template-rows: 70px 500px repeat(2, 350px) 300px 450px;
     gap: 20px;
   }
-  .contenedor-grid .grid-img3 {
+  .contenedor-grid .grid-img1 {
     display: none;
   }
   /* pagina hinchada */
@@ -401,13 +401,13 @@ iframe {
   }
   /* pagina titulos */
   .contenedor-grid {
-    grid-template-areas: "titulo" "texto1" "img1" "texto2" "img2" "texto3";
+    grid-template-areas: "titulo" "texto1" "img3" "texto2" "img2" "texto3";
     grid-template-columns: 60%;
-    grid-template-rows: 70px repeat(5, 300px);
+    grid-template-rows: 70px 300px 500px repeat(2, 300px);
     gap: 10px;
     justify-content: center;
   }
-  .contenedor-grid .grid-img3 {
+  .contenedor-grid .grid-img1 {
     display: none;
   }
   /* pagina historia */
@@ -440,4 +440,4 @@ iframe {
   footer {
     margin-top: 50px;
   }
-}/*# sourceMappingURL=estilos.css.map */eMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */*/
