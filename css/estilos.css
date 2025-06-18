@@ -39,11 +39,11 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 20px 0 50px 30px;
+  padding: 20px 0 50px 0px;
 }
 .section_partidos .div-partidos img {
   width: 300px;
-  height: 300px;
+  height: 350px;
   border-radius: 5px;
   padding-bottom: 10px;
 }
@@ -162,7 +162,7 @@ footer .wp {
   grid-template-areas: "titulo titulo titulo" "texto1 texto1 img1" "img2 img2 img1" "texto2 img3 texto3";
   grid-template-columns: 25% 40% 25%;
   grid-template-rows: 200px repeat(3, 400px);
-  gap: 15px;
+  gap: 10px;
   justify-content: center;
 }
 .contenedor-grid .titulo-grid {
@@ -440,4 +440,4 @@ iframe {
   footer {
     margin-top: 50px;
   }
-}/*# sourceMappingURL=estilos.css.map */*/
+}/*# sourceMappingURL=estilos.css.map */ */
